@@ -1,6 +1,8 @@
 # Selenium Automation Project
 
 This project is an automated testing framework built with **Java** and **Selenium WebDriver**, with **ExtentReports** for detailed test reporting.
+The design patterns used is Page Object Model (POM), which helps to organize test code by separating test logic from UI interactions.
+Each relevant page of the application has a corresponding class that contains locators and actions.
 
 ## Requirements
 
