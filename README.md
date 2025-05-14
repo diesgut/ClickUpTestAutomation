@@ -57,3 +57,46 @@ The project uses **ExtentReports** for generating visually rich HTML reports. Af
 
 - Make sure your ChromeDriver version matches your Chrome browser version.
 - You can customize test data and configuration in the `resources` folder if applicable.
+
+## Project Structure
+
+```
+ClickUpTestAutomation
+├── .idea
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com.diesgut
+│   │   │       ├── config
+│   │   │       │   ├── GlobalConstants.java
+│   │   │       │   └── WebDriverConfig.java
+│   │   │       ├── domain
+│   │   │       │   └── UserRegister.java
+│   │   │       ├── pages
+│   │   │       │   ├── ClickUpPO.java
+│   │   │       │   └── SignUpPO.java
+│   │   │       └── utils
+│   │   │           ├── BrowserUtils.java
+│   │   │           ├── JavaScriptUtils.java
+│   │   │           └── PropertiesUtils.java
+│   │   └── resources
+│   │       └── selenium.properties
+│   └── test
+│       ├── java
+│       │   └── com.diesgut
+│       │       ├── pages
+│       │       │   ├── SignUpPOTest.java
+│       │       │   └── UserRegisterCasesDP.java
+│       │       └── utils
+│       │           ├── MessagesUtils.java
+│       │           └── BaseTestReport.java
+│       └── resources
+│           ├── messages_en.properties
+│           ├── messages_es.properties
+│           └── user_register_invalid_cases.json
+├── test-output
+│   └── extent-report.html
+├── .gitignore
+├── pom.xml
+└── README.md
+```
